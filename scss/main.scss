@@ -1,0 +1,322 @@
+@import "foundation/foundation";
+@import url(fonts.googleapis.com/css?family=PT+Sans);
+
+$primary-color: #22334A;
+$primary-font: "PT Sans", sans-serif;
+
+body {
+  background-color: $primary-color;
+}
+
+.top {
+  height: 100%;
+  background: 50% 50% no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(255, 255, 255, 0.1)), url('../images/full.jpg'); }
+
+.imagine h1 {
+  text-align: center;
+  font-family: 'PT Sans', sans-serif;
+  color: #404040;
+  font-size: 1em; }
+
+
+hr {
+  width: 90%;
+  margin: 3% auto 0 auto;
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: -o-linear-gradient(left, #ccc, #fff, #ccc); }
+
+
+.logo2 img {
+  width: 30%;
+  margin: 5% 0 0 1%; }
+
+
+.logo img {
+  width: 8%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 7% 1% 0 0; }
+
+
+.headshot {
+  margin-top: 10%; }
+
+.headshot img {
+  border-radius: 10px;
+  max-width: 100%;
+  margin: 5% auto; }
+
+
+.philo h4 {
+  text-align: center;
+  color: #fff;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 0.95em;
+  }
+
+.tagline p {
+  margin-top: 5%;
+  color: #fff;
+  text-align: center;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 0.60em; }
+
+
+.call2action {
+  height: 75px;
+  max-width: 90%;
+  border-radius: 10px;
+  margin: 10% 5% 0 5%;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #22334A; }
+
+.call2action p {
+  color: #22334A;
+  font-family: 'PT Sans', sans-serif;
+  text-align: center;
+  line-height: 75px; }
+
+
+.biggerscreen {
+  height: 75px;
+  max-width: 60%;
+  border-radius: 10px;
+  margin: 10% 20% 0 20%;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #22334A; 
+   
+   p {
+    color: $primary-color;
+    font-family: 'PT Sans', sans-serif;
+    text-align: center;
+    line-height: 75px; 
+  }
+}
+
+.biggerscreen {
+  display: none;
+   }
+
+
+.contact {
+  margin: 5% 0 0 0;
+  ul {
+  list-style-type: none;
+  text-decoration: none; 
+  text-align: center;
+    img {
+    max-width: 15px;
+     }
+  }
+
+li {
+  text-decoration: none;
+  display: inline-block;
+  float: center;
+   }
+
+ a {
+  color: $primary-color;
+  font-size: 0.60em;
+  font-family: $primary-font;
+  padding: 5px;
+   }
+
+ a:hover {
+  color: silver; }
+}
+
+.contact-big {
+  ul {
+  list-style-type: none;
+  text-decoration: none; 
+    img {
+    max-width: 25px;
+     }
+  }
+
+li {
+  text-decoration: none;
+  display: inline-block;
+  float: center;
+   }
+
+ a {
+  color: $primary-color;
+  font-size: 0.85em;
+  font-family: $primary-font;
+  padding: 5px;
+   }
+
+ a:hover {
+  color: silver; }
+}
+
+.contact-big {
+  display: none;
+}
+/*********************************************** 
+
+MEDIA QUERIES 
+
+************************************************/
+@media only screen and (min-width: 456px) {
+
+  .logo2 img {
+    max-width: 15%;
+    margin: 0 0 0 4%; }
+
+  .logo img {
+    max-width: 5%;
+    margin: 5% 2% 0 0; }
+ 
+  .headshot {
+    margin-top: 5%; }
+   
+  .headshot img {
+    border-radius: 10px;
+    max-width: 75%;
+    margin: 5% 12.5%; }
+
+  .tagline p {
+    margin-top: 2%;
+    color: #fff;
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 0.90em;
+     }
+ 
+  .call2action {
+    margin: 10% 5% 0 5%; }
+
+  .contact {
+    ul {
+      text-align: center;
+    }
+  }
+}
+
+@media only screen and (min-width: 650px) {
+  .imagine {
+    h1 {
+      font-size: 1.5em;
+    }
+  }
+  .call2action {
+    display: block;
+    margin: 8% 5% 0 5%; }
+ 
+  .tagline {
+    p {
+      font-size: 1.1em;
+    }
+  }
+}
+
+
+@media only screen and (min-width: 767px) {
+ 
+  .headshot {
+    margin: 7% auto 0 auto; }
+  
+  .headshot img {
+      max-width: 85%;
+      margin: 0 auto 0 auto; }
+
+  hr {
+    margin: 0 auto 0 auto; }
+  
+  .logo img {
+    margin: 1% 2% 0 0; }
+  
+  .logo2 img {
+    margin: 1% 0 0 1%; }
+  
+  .imagine {
+    margin: 2% 0 0 0; }
+
+  .philo {
+    h4 {
+      font-size: 2em;
+    }
+  }
+  .tagline {
+    p {
+      font-size: 1.3em;
+    }
+  }  
+  .call2action {
+    margin: 5% auto 0 auto; }
+
+  .contact {
+    ul {
+      margin: 25px 0 0 0;
+    }
+  } 
+}
+
+@media only screen and (min-width: 1000px) {
+  
+  .call2action {
+    display: none;
+  }
+
+
+  .biggerscreen {
+    display: block;
+  }
+
+  .contact-big {
+    display: block;
+
+    ul {
+      margin: 25px 0 0 0 !important;
+      text-align: center;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .logo {
+    img {
+      margin: 2% 2% 0 2%; 
+  }
+}
+  .imagine {
+    h1 {
+    color: #888888; 
+  }
+}
+
+  hr {
+    background-color: #ffffff; } 
+
+  .contact-big {
+    display: block;
+    text-align: center;
+    margin: 50px auto 0 auto;
+    a {
+      color: $primary-color;
+      font-size: initial;
+      text-align: center;
+    }
+  }
+  .imagine {
+    h1 {
+      font-size: 2.3em;
+    }
+  }
+}
+
+
