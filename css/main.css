@@ -3214,5 +3214,13 @@ MEDIA QUERIES
 
   .imagine h1 {
     font-size: 2.3em; } }
+@media only screen and (min-height: 1500px) {
+  .biggerscreen {
+    border-color: white; }
+    .biggerscreen p {
+      color: white; }
+
+  .contact-big a {
+    color: white; } }
 
 /*# sourceMappingURL=main.css.map */

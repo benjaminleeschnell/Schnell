@@ -397,4 +397,17 @@ MEDIA QUERIES
   }
 }
 
+@media only screen and (min-height: 1500px) {
+  .biggerscreen {
+    border-color: white;
+    p {
+      color: white;
+    }
+  }
+  .contact-big {
+    a {
+      color: white;
+    }
+  }
+}
 
