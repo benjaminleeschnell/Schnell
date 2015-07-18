@@ -2945,7 +2945,7 @@ body {
   -o-background-size: cover;
   background-size: cover;
   position: relative;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(255, 255, 255, 0.1)), url("../images/full.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.1)), url("../images/full.jpg");
   overflow: hidden; }
 
 .random {
@@ -2956,14 +2956,6 @@ body {
   font-family: 'PT Sans', sans-serif;
   color: #404040;
   font-size: 1em; }
-
-hr {
-  width: 90%;
-  margin: 3% auto 0 auto;
-  border: 0;
-  height: 1px;
-  background: #333;
-  background-image: -o-linear-gradient(left, #ccc, #fff, #ccc); }
 
 .logo2 img {
   width: 30%;
@@ -2980,22 +2972,23 @@ hr {
   margin-top: 10%; }
 
 .headshot img {
-  border-radius: 10px;
-  max-width: 100%;
-  margin: 5% auto; }
+  border-radius: 50%;
+  max-width: 50%;
+  margin: 5% 25%;
+  text-align: center; }
 
 .philo h4 {
   text-align: center;
   color: #fff;
   font-family: 'PT Sans', sans-serif;
-  font-size: 0.95em; }
+  font-size: 1em; }
 
 .tagline p {
   margin-top: 5%;
   color: #fff;
   text-align: center;
   font-family: 'PT Sans', sans-serif;
-  font-size: 0.60em; }
+  font-size: 0.80em; }
 
 .call2action {
   height: 75px;
@@ -3051,18 +3044,16 @@ hr {
 
 .contact-big ul {
   list-style-type: none;
-  text-decoration: none; }
+  text-decoration: none;
+  text-align: left; }
   .contact-big ul img {
     max-width: 25px; }
 .contact-big li {
-  text-decoration: none;
-  display: inline-block;
-  float: center; }
+  text-decoration: none; }
 .contact-big a {
   color: #22334A;
-  font-size: 0.85em;
-  font-family: "PT Sans", sans-serif;
-  padding: 5px; }
+  font-size: 0.95em;
+  font-family: "PT Sans", sans-serif; }
 .contact-big a:hover {
   color: silver; }
 
@@ -3074,6 +3065,9 @@ hr {
 MEDIA QUERIES 
 
 ************************************************/
+@media only screen and (max-height: 481px) {
+  body {
+    overflow: scroll; } }
 @media only screen and (min-width: 456px) {
   .logo2 img {
     max-width: 15%;
@@ -3087,9 +3081,9 @@ MEDIA QUERIES
     margin-top: 5%; }
 
   .headshot img {
-    border-radius: 10px;
-    max-width: 75%;
-    margin: 5% 12.5%; }
+    border-radius: 50%;
+    max-width: 50%;
+    margin: 5% 25%; }
 
   .philo h4 {
     font-size: 1.5em; }
@@ -3111,6 +3105,10 @@ MEDIA QUERIES
 @media only screen and (min-width: 650px) {
   .imagine h1 {
     font-size: 1.5em; }
+
+  .headshot img {
+    max-width: 70%;
+    margin: 0 15% 0 15%; }
 
   .call2action {
     display: block;
@@ -3162,6 +3160,23 @@ MEDIA QUERIES
   .contact a {
     font-size: 1.3em; } }
 @media only screen and (min-width: 1000px) {
+  body {
+    overflow: hidden; }
+
+  .imagine h1 {
+    text-align: center; }
+
+  .headshot img {
+    border-radius: 10px;
+    max-width: 90%;
+    margin-left: 5%; }
+
+  .philo h4 {
+    text-align: left; }
+
+  .tagline p {
+    text-align: left; }
+
   .call2action {
     display: none; }
 
@@ -3169,13 +3184,15 @@ MEDIA QUERIES
     display: none; }
 
   .biggerscreen {
-    display: block; }
+    display: block;
+    margin: 10% 40% 0 0%; }
 
   .contact-big {
     display: block; }
     .contact-big ul {
-      margin: 25px 0 0 0;
-      text-align: center; } }
+      margin: 0 0 0 0; }
+    .contact-big a {
+      text-align: left; } }
 @media only screen and (min-width: 1200px) {
   .logo img {
     margin: 2% 2% 0 2%; }
