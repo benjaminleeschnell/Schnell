@@ -5,18 +5,18 @@ $primary-color: #22334A;
 $primary-font: "PT Sans", sans-serif;
 
 body {
-  background-color: $primary-color;
-}
-
-.top {
-  height: 100%;
   background: 50% 50% no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   position: relative;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(255, 255, 255, 0.1)), url('../images/full.jpg'); }
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(255, 255, 255, 0.1)), url('../images/full.jpg'); 
+}
+
+.random {
+  padding: 100px 0 0 0 0;
+}
 
 .imagine h1 {
   text-align: center;
@@ -128,7 +128,7 @@ li {
 
  a {
   color: $primary-color;
-  font-size: 0.60em;
+  font-size: 0.50em;
   font-family: $primary-font;
   padding: 5px;
    }
@@ -204,6 +204,9 @@ MEDIA QUERIES
     ul {
       text-align: center;
     }
+    a {
+      font-size: 0.75em;
+    }
   }
 }
 
@@ -220,6 +223,16 @@ MEDIA QUERIES
   .tagline {
     p {
       font-size: 1.1em;
+    }
+  }
+  .contact {
+    ul {
+      img {
+        max-width: 20px;
+      }
+    }
+    a {
+      font-size: 1em;
     }
   }
 }
@@ -262,6 +275,13 @@ MEDIA QUERIES
   .contact {
     ul {
       margin: 25px 0 0 0;
+
+      img {
+        max-width: 25px;
+      }
+    }
+    a {
+      font-size: 1.3em;
     }
   } 
 }
@@ -272,6 +292,9 @@ MEDIA QUERIES
     display: none;
   }
 
+.contact {
+  display: none;
+}
 
   .biggerscreen {
     display: block;
@@ -281,7 +304,7 @@ MEDIA QUERIES
     display: block;
 
     ul {
-      margin: 25px 0 0 0 !important;
+      margin: 25px 0 0 0;
       text-align: center;
     }
   }
