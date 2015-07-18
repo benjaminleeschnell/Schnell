@@ -61,14 +61,14 @@ body {
 
 .philo h4 {
   text-align: center;
-  color: #fff;
+  color: $primary-color;
   font-family: 'PT Sans', sans-serif;
   font-size: 1em;
   }
 
 .tagline p {
   margin-top: 5%;
-  color: #fff;
+  color: $primary-color;
   text-align: center;
   font-family: 'PT Sans', sans-serif;
   font-size: 0.80em; }
@@ -172,7 +172,7 @@ li {
 MEDIA QUERIES 
 
 ************************************************/
-@media only screen and (max-height: 481px) {
+@media only screen and (max-height: 600px) {
   body {
     overflow: scroll;
   }
@@ -204,7 +204,6 @@ MEDIA QUERIES
 
   .tagline p {
     margin-top: 2%;
-    color: #fff;
     text-align: center;
     font-family: 'PT Sans', sans-serif;
     font-size: 0.90em;
@@ -241,12 +240,14 @@ MEDIA QUERIES
   .philo {
     h4 {
       font-size: 1.8em;
+      color: white;
     }
   }
 
   .tagline {
     p {
       font-size: 1.1em;
+      color: white;
     }
   }
   .contact {
