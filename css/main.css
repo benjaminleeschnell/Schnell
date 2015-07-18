@@ -2945,7 +2945,8 @@ body {
   -o-background-size: cover;
   background-size: cover;
   position: relative;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(255, 255, 255, 0.1)), url("../images/full.jpg"); }
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(255, 255, 255, 0.1)), url("../images/full.jpg");
+  overflow: hidden; }
 
 .random {
   padding: 100px 0 0 0 0; }
@@ -3090,6 +3091,9 @@ MEDIA QUERIES
     max-width: 75%;
     margin: 5% 12.5%; }
 
+  .philo h4 {
+    font-size: 1.5em; }
+
   .tagline p {
     margin-top: 2%;
     color: #fff;
@@ -3111,6 +3115,9 @@ MEDIA QUERIES
   .call2action {
     display: block;
     margin: 8% 5% 0 5%; }
+
+  .philo h4 {
+    font-size: 1.8em; }
 
   .tagline p {
     font-size: 1.1em; }
@@ -3140,7 +3147,7 @@ MEDIA QUERIES
     margin: 2% 0 0 0; }
 
   .philo h4 {
-    font-size: 2em; }
+    font-size: 2.2em; }
 
   .tagline p {
     font-size: 1.3em; }

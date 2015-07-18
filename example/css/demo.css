@@ -1,5 +1,6 @@
 /* General Blueprint Style */
-@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+@import url(fonts.googleapis.com/css?family=PT+Sans);
+@import url(fonts.googleapis.com/css?family=Dosis);
 @font-face {
 	font-family: 'bpicons';
 	font-weight: normal;
@@ -49,16 +50,25 @@ html {
 
 /* Main styles */
 body {
-	font-family: "Avenir", 'Helvetica Neue', 'Lato', 'Segoe UI', Helvetica, Arial, sans-serif;
 	color: #CECECE;
 	background: #222125;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
 
+span {
+	font-family: "Dosis";
+	color: white;
+}
+
+h1 {
+	font-family: "PT Sans", sans-serif;
+}
+
 a {
+	font-family: "PT Sans";
 	text-decoration: none;
-	color: #5C5EDC;
+	color: white;
 	outline: none;
 }
 
@@ -99,13 +109,14 @@ a:hover {
 	width: 100%;
 	font-weight: 700;
 	font-size: 0.85em;
-	color: #5C5EDC;
+	color: white;
 	position: relative;
 	z-index: 100;
 	display: block;
 	padding: 0 0 .6em .1em;
 	letter-spacing: .5em;
 	text-transform: uppercase;
+	font-family: "Dosis";
 }
 
 .bp-header > span span:after {
@@ -122,6 +133,7 @@ a:hover {
 .bp-header > span span:hover:before {
 	content: attr(data-content);
 	font-size: 110%;
+	font-family: "Dosis" !important;
 	font-weight: 700;
 	line-height: 1.2;
 	max-width: 500px;
