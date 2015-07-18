@@ -162,7 +162,6 @@ a:hover {
 	margin: 0 .1em;
 	text-align: left;
 	padding-right: 5px;
-	text-decoration: underline;
 }
 
 .bp-header nav a > span {
@@ -230,6 +229,16 @@ a:hover {
 
 .bp-icon-prev:after {
 	content: '\e004';
+}
+
+.contact a {
+	padding-right: 30px;
+	font-size: 0.75em;
+	text-align: center;
+}
+
+.contact a:hover {
+	color: #595A5F;
 }
 
 @media screen and (max-width: 40em) {
