@@ -1,4 +1,5 @@
-@import url(fonts.googleapis.com/css?family=PT+Sans);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,600,400);
+@import url(http://fonts.googleapis.com/css?family=Megrim);
 meta.foundation-version {
   font-family: "/5.5.0/"; }
 
@@ -2938,44 +2939,97 @@ kbd {
   padding: 0.125rem 0.25rem 0;
   border-radius: 3px; }
 
-body {
+.top {
+  height: 100%;
   background: 50% 50% no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   position: relative;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.1)), url("../images/full.jpg");
-  overflow: hidden; }
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(255, 255, 255, 0.1)), url("../images/full.jpg");
+  background-attachment: scroll;
+  overflow: scroll; }
+  .top img {
+    max-width: 100px;
+    position: absolute;
+    top: 40px;
+    left: 50px; }
+  .top ul {
+    position: absolute;
+    top: 80px;
+    right: 100px; }
+  .top li {
+    list-style-type: none; }
+  .top a {
+    color: white;
+    font-size: 0.85em;
+    font-family: "Open Sans";
+    text-decoration: none; }
 
-.random {
-  padding: 100px 0 0 0 0; }
+/*********************************************************
 
-.imagine h1 {
-  text-align: center;
-  font-family: 'PT Sans', sans-serif;
-  color: #404040;
-  font-size: 1em; }
+Burger Navigation
 
-.logo2 img {
-  width: 30%;
-  margin: 5% 0 0 1%; }
+**********************************************************/
+#burger-holder {
+  position: relative;
+  background-color: white;
+  cursor: pointer;
+  border: none; }
+  #burger-holder #burger-img {
+    width: 42px;
+    height: 26px;
+    position: absolute;
+    right: 100px;
+    top: 26px; }
 
-.logo img {
-  width: 8%;
+#burger-menu {
+  display: block;
   position: absolute;
-  top: 0;
-  right: 0;
-  margin: 7% 1% 0 0; }
+  right: 80px;
+  top: 120px;
+  width: 120px;
+  background-color: white;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  padding: 5px 10px 5px 10px;
+  font-size: 16px;
+  line-height: 150%;
+  color: #2F8CDB;
+  color: white;
+  white-space: nowrap; }
+
+#burger-menu a {
+  color: #2F8CDB;
+  text-decoration: none; }
+
+/*********************************************************
+
+End Burger Navigation
+
+**********************************************************/
+.benschnell {
+  margin: 60% auto 0 auto; }
+  .benschnell h1 {
+    text-align: center;
+    color: white;
+    font-family: "Megrim";
+    font-size: 1.5em; }
+  .benschnell h3 {
+    text-align: center;
+    color: white;
+    font-family: "Open Sans";
+    font-size: 0.85em;
+    font-weight: 300; }
 
 .headshot {
   margin-top: 10%; }
 
 .headshot img {
-  border-radius: 50%;
   max-width: 50%;
-  margin: 5% 25%;
-  text-align: center; }
+  border-radius: 50%;
+  margin: 0 25%; }
 
 .philo h4 {
   text-align: center;
@@ -2983,106 +3037,108 @@ body {
   font-family: 'PT Sans', sans-serif;
   font-size: 1em; }
 
-.tagline p {
-  margin-top: 5%;
-  color: #22334A;
-  text-align: center;
-  font-family: 'PT Sans', sans-serif;
-  font-size: 0.80em; }
-
-.call2action {
-  height: 75px;
-  max-width: 90%;
-  border-radius: 10px;
-  margin: 10% 5% 0 5%;
-  border-style: solid;
-  border-width: 3px;
-  border-color: #22334A; }
-
-.call2action p {
-  color: #22334A;
-  font-family: 'PT Sans', sans-serif;
-  text-align: center;
-  line-height: 75px; }
-
-.biggerscreen {
-  height: 75px;
-  max-width: 60%;
-  border-radius: 10px;
-  margin: 10% 20% 0 20%;
-  border-style: solid;
-  border-width: 3px;
-  border-color: #22334A; }
-  .biggerscreen p {
+.tagline {
+  max-width: 740px; }
+  .tagline p {
+    margin-top: 5%;
     color: #22334A;
-    font-family: 'PT Sans', sans-serif;
     text-align: center;
-    line-height: 75px; }
+    font-family: 'PT Sans', sans-serif;
+    font-size: 0.80em; }
 
-.biggerscreen {
+  /*******************************************************
+
+  Gallery
+
+  *********************************************************/
+.examples2 {
   display: none; }
 
+.gallery1 {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  float: left;
+  margin: 0 0 0 0; }
+  .gallery1 li {
+    list-style-type: none; }
+  .gallery1 img {
+    margin-bottom: 10px; }
+
+.explain {
+  margin: 10px 10px; }
+  .explain h2 {
+    font-family: "Open Sans";
+    font-size: 0.85em; }
+  .explain h3 {
+    font-family: "Open Sans";
+    font-size: 0.80em; }
+  .explain p {
+    font-family: "Open Sans";
+    font-size: 0.70em; }
+  .explain a {
+    font-family: "Open Sans";
+    font-size: 0.70em;
+    color: gray;
+    padding: 10px; }
+
+  /*******************************************************
+
+  End Gallery
+
+  *********************************************************/
+  /*********************************************** 
+
+  Contact
+
+  ************************************************/
 .contact {
-  margin: 5% 0 0 0; }
+  background-color: white;
+  margin-top: 30px; }
   .contact ul {
-    list-style-type: none;
-    text-decoration: none;
-    text-align: center; }
-    .contact ul img {
-      max-width: 15px; }
+    text-align: center;
+    margin-bottom: 0; }
+  .contact img {
+    max-width: 90%;
+    margin: 10px 5%; }
   .contact li {
     text-decoration: none;
-    display: inline-block;
-    float: center; }
+    list-style-type: none; }
   .contact a {
-    color: #22334A;
+    color: white;
     font-size: 0.50em;
-    font-family: "PT Sans", sans-serif;
-    padding: 5px; }
+    font-family: "Open Sans", sans-serif;
+    text-decoration: none;
+    padding: 0 0 -30px 0; }
+  .contact h1 {
+    background-color: gray;
+    padding: 10px 0;
+    color: white;
+    font-size: 1.5em;
+    font-family: "Open Sans", sans-serif;
+    text-align: center; }
   .contact a:hover {
     color: silver; }
 
-.contact-big ul {
-  list-style-type: none;
-  text-decoration: none;
-  text-align: left; }
-  .contact-big ul img {
-    max-width: 25px; }
-.contact-big li {
-  text-decoration: none; }
-.contact-big a {
-  color: #22334A;
-  font-size: 0.95em;
-  font-family: "PT Sans", sans-serif; }
-.contact-big a:hover {
-  color: silver; }
+/*********************************************** 
 
-.contact-big {
-  display: none; }
+End Contact 
 
+************************************************/
 /*********************************************** 
 
 MEDIA QUERIES 
 
 ************************************************/
-@media only screen and (max-height: 600px) {
-  body {
-    overflow: scroll; } }
 @media only screen and (min-width: 456px) {
-  .logo2 img {
-    max-width: 15%;
-    margin: 0 0 0 4%; }
-
-  .logo img {
-    max-width: 5%;
-    margin: 5% 2% 0 0; }
+  .benschnell {
+    margin-top: 45%; }
 
   .headshot {
-    margin-top: 5%; }
+    margin-top: 2%; }
 
   .headshot img {
     border-radius: 50%;
-    max-width: 50%;
     margin: 5% 25%; }
 
   .philo h4 {
@@ -3094,56 +3150,97 @@ MEDIA QUERIES
     font-family: 'PT Sans', sans-serif;
     font-size: 0.90em; }
 
-  .call2action {
-    margin: 10% 5% 0 5%; }
-
   .contact ul {
     text-align: center; }
+  .contact li {
+    display: inline-block; }
   .contact a {
-    font-size: 0.75em; } }
+    font-size: 0.75em; }
+  .contact img {
+    max-width: 150px; } }
 @media only screen and (min-width: 650px) {
-  .imagine h1 {
-    font-size: 1.5em; }
+  .benschnell {
+    margin-top: 40%; }
+    .benschnell h1 {
+      font-size: 2em; }
+    .benschnell h3 {
+      font-size: 1.2em; }
 
   .headshot img {
-    max-width: 70%;
-    margin: 0 15% 0 15%; }
-
-  .call2action {
-    display: block;
-    margin: 8% 5% 0 5%; }
+    max-width: 80%;
+    margin: 30px 5% 30px 10%; }
 
   .philo h4 {
     font-size: 1.8em;
-    color: white; }
+    color: black;
+    margin-top: 30px;
+    text-align: left; }
 
   .tagline p {
     font-size: 1.1em;
-    color: white; }
+    color: black;
+    text-align: left; }
 
-  .contact ul img {
-    max-width: 20px; }
+  /*******************************************************
+
+  Gallery
+
+  *********************************************************/
+  .examples2 {
+    display: none; }
+
+  .gallery1 {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    float: left;
+    margin: 0 0 0 0; }
+    .gallery1 li {
+      list-style-type: none; }
+    .gallery1 img {
+      margin-bottom: 10px; }
+
+  .explain {
+    margin: 10px 10px; }
+    .explain h2 {
+      font-family: "Open Sans";
+      font-size: 1.2em; }
+    .explain h3 {
+      font-family: "Open Sans";
+      font-size: 1em; }
+    .explain p {
+      font-family: "Open Sans";
+      font-size: 0.90em; }
+    .explain a {
+      font-family: "Open Sans";
+      font-size: 0.90em;
+      color: gray;
+      padding: 10px; }
+
+  /*******************************************************
+
+  End Gallery
+
+  *********************************************************/
+  .contact h1 {
+    font-size: 1.5em; }
+  .contact img {
+    max-width: 200px; }
   .contact a {
     font-size: 1em; } }
 @media only screen and (min-width: 767px) {
+  .benschnell {
+    margin-top: 40%; }
+    .benschnell h1 {
+      font-size: 3em; }
+    .benschnell h3 {
+      font-size: 1.7em; }
+
   .headshot {
-    margin: 7% auto 0 auto; }
+    margin: 4% auto 0 auto; }
 
   .headshot img {
-    max-width: 85%;
     margin: 0 auto 0 auto; }
-
-  hr {
-    margin: 0 auto 0 auto; }
-
-  .logo img {
-    margin: 1% 2% 0 0; }
-
-  .logo2 img {
-    margin: 1% 0 0 1%; }
-
-  .imagine {
-    margin: 2% 0 0 0; }
 
   .philo h4 {
     font-size: 2.2em; }
@@ -3151,77 +3248,232 @@ MEDIA QUERIES
   .tagline p {
     font-size: 1.3em; }
 
-  .call2action {
-    margin: 5% auto 0 auto; }
+    /*******************************************************
 
-  .contact ul {
-    margin: 25px 0 0 0; }
-    .contact ul img {
-      max-width: 25px; }
+  Gallery
+
+  *********************************************************/
+  .examples2 {
+    display: none; }
+
+  .gallery1 {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    float: left;
+    margin: 0 0 0 0; }
+    .gallery1 li {
+      list-style-type: none; }
+    .gallery1 img {
+      margin-bottom: 10px; }
+
+  .explain {
+    margin: 10px 10px; }
+    .explain h2 {
+      font-family: "Open Sans";
+      font-size: 1.5em; }
+    .explain h3 {
+      font-family: "Open Sans";
+      font-size: 1.2em; }
+    .explain p {
+      font-family: "Open Sans";
+      font-size: 1.1em; }
+    .explain a {
+      font-family: "Open Sans";
+      font-size: 1.1em;
+      color: gray;
+      padding: 10px; }
+
+  /*******************************************************
+
+  End Gallery
+
+  *********************************************************/
+  .contact h1 {
+    font-size: 3em;
+    margin: 50px 0 30px 0; }
+  .contact img {
+    max-width: 200px; }
   .contact a {
     font-size: 1.3em; } }
 @media only screen and (min-width: 1000px) {
-  body {
-    overflow: hidden; }
+  .top {
+    background-attachment: fixed; }
 
-  .imagine h1 {
-    text-align: center; }
+  .benschnell {
+    margin-top: 17%; }
+    .benschnell h1 {
+      font-size: 3.5em; }
+    .benschnell h3 {
+      font-size: 2em; }
 
   .headshot img {
-    border-radius: 10px;
-    max-width: 90%;
-    margin-left: 5%; }
+    max-width: 60%;
+    margin: 45px 30% 100px 10%;
+    border-radius: 10px; }
 
   .philo h4 {
-    text-align: left; }
+    text-align: left;
+    color: black;
+    margin: 75px 100px 0 -100px; }
 
   .tagline p {
+    text-align: left;
+    color: black;
+    margin: 0 100px 0 -100px; }
+
+  .headshot img {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    filter: grayscale(100%); }
+
+  .headshot img:hover {
+    filter: none;
+    -webkit-filter: none; }
+
+  /*******************************************************
+
+  Gallery
+
+  *********************************************************/
+  .examples1 {
+    display: none; }
+
+  .examples2 {
+    display: block; }
+
+  .gallery {
+    position: relative;
+    width: 50%;
+    overflow: hidden;
+    float: left;
+    margin: 0 0 0 0; }
+    .gallery li {
+      list-style-type: none; }
+
+  .gallery figure {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    cursor: pointer; }
+
+  .gallery figure img {
+    display: block;
+    position: relative;
+    z-index: 10; }
+
+  .gallery figure figcaption {
+    display: block;
+    position: absolute;
+    z-index: 5;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  .gallery figure h2 {
+    font-family: 'Open Sans';
+    font-weight: 300;
+    color: white;
+    font-size: 24px;
     text-align: left; }
 
-  .call2action {
-    display: none; }
+  .gallery figure h3 {
+    font-family: 'Open Sans';
+    font-weight: 300;
+    color: white;
+    font-size: 21px;
+    text-align: left; }
 
-  .contact {
-    display: none; }
-
-  .biggerscreen {
+  .gallery figure p {
     display: block;
-    margin: 10% 40% 0 0%; }
+    font-family: 'Open Sans';
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    margin: 0;
+    color: white;
+    text-align: left; }
 
-  .contact-big {
-    display: block; }
-    .contact-big ul {
-      margin: 0 0 0 0; }
-    .contact-big a {
-      text-align: left; } }
-@media only screen and (min-width: 1200px) {
-  .logo img {
-    margin: 2% 2% 0 2%; }
-
-  .imagine h1 {
-    color: #888888; }
-
-  hr {
-    background-color: #ffffff; }
-
-  .contact-big {
+  .gallery figure a {
     display: block;
+    font-family: 'Open Sans';
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    margin: 0;
+    color: black;
+    text-align: left;
+    padding: 10px; }
+
+  .gallery figure figcaption {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 29px 44px;
+    background-color: #756A67;
     text-align: center;
-    margin: 50px auto 0 auto; }
-    .contact-big a {
-      color: #22334A;
-      font-size: initial;
+    backface-visibility: hidden;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all 0.5s; }
+
+  .gallery figure img {
+    backface-visibility: hidden;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all 0.5s; }
+
+  .gallery figure:hover img, figure.hover img {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    transform: rotateY(180deg); }
+
+  .gallery figure:hover figcaption, figure.hover figcaption {
+    -webkit-transform: rotateY(0);
+    -moz-transform: rotateY(0);
+    transform: rotateY(0); }
+
+  /*******************************************************
+
+  End Gallery
+
+  *********************************************************/
+  /*******************************************************
+
+  Contact
+
+  *********************************************************/
+  .contact {
+    background-color: white; }
+    .contact h1 {
+      font-size: 1.5em; }
+    .contact ul {
       text-align: center; }
+    .contact img {
+      width: 100px; }
+    .contact a {
+      font-size: 1em !important;
+      text-align: left;
+      color: white; } }
+  /*******************************************************
 
-  .imagine h1 {
-    font-size: 2.3em; } }
-@media only screen and (min-height: 1500px) {
-  .biggerscreen {
-    border-color: white; }
-    .biggerscreen p {
-      color: white; }
+  End Contact
 
-  .contact-big a {
-    color: white; } }
+  *********************************************************/
+@media only screen and (min-width: 1200px) {
+  .contact {
+    margin-top: 0;
+    background-color: white; }
+    .contact li {
+      display: inline-block; }
+    .contact img {
+      max-width: 100px; }
+    .contact a {
+      font-size: 1em;
+      padding-bottom: 30px; } }
 
 /*# sourceMappingURL=main.css.map */

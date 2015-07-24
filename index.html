@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
   <head>
+    <meta name="google-site-verification" content="_i5vaLmlfGUtgk1wjMPhwsddkFhgm4eC0oxA82Fwz8A" />
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Schnell.io</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <!-- Place favicon.ico in the root directory-->
+    <link rel="icon" 
+      type="image/png" 
+      href="favicon.png" />
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
@@ -21,53 +24,238 @@
     -->
     <!-- Add your site or application content here-->
     <div class="top">
-    <div class="random"
-       <div class="header">
-         <div class="logo2"><img src="images/logo3.jpg"></div>
-         <div class="logo"><img src="images/logo.jpg"></div>
-       </div>
-      <div class="imagine">
-        <h1>Hi, I'm Ben Schnell and I build websites</h1>
-      </div>
-      <!-- <hr> -->
-      <div class="headshot row">
-        <div class="medium-6 columns"><img src="images/bn1.jpg"></div>
-        <div class="medium-6 columns">
-          <div class="philo">
-            <h4>Philosophy</h4>
+
+<!-- ***********************************************************
+
+Burger Navigation
+
+**************************************************************** -->
+
+        <div id="burger-holder" onclick="ReverseHamburgerMenuDisplay()">
+
+          <div id="burger-img"><img src="images/burger-white.png" alt="navigation icon"></div>
+
+          <div id="burger-menu">
+            <div onmouseover="HamburgerMenuItemOver(this)"><a href="#examples">Work Examples</a></div>
+            <div onmouseover="HamburgerMenuItemOver(this)" onmouseout="HamburgerMenuItemOut(this)" onclick="location.href='#contact'"><a href="#contact">Contact</a></div>
           </div>
-          <div class="tagline">
-            <p>I get passionate about my projects, and I love working with others who are passionate about what they do. Working with a sense of mission is not only exhilerating, it's the beginning of real creativity.</p>
         </div>
-          <div class="biggerscreen"> <a href="example/demo.html">
-              <p>Example Projects</p></a></div>
-                <div class="contact-big">
-                  <ul>
-                    <li><a href="mailto:ben@schnell.io"><img src="images/mail.png">ben@schnell.io  </a></li>
-                    <li><a href="tel:4236193528"><img src="images/phone.png">423.619.3528 </a></li>
-                    <li><a href="http://twitter.com/benschmo"><img src="images/twitter.png">@benschmo</a></li>
-                  </ul>
-               </div>
-         </div>
+
+<script type="text/javascript">
+document.getElementById("burger-menu").style.display="none";
+function ReverseHamburgerMenuDisplay()
+{
+   var id = document.getElementById("burger-menu");
+   if( id.style.display == "none" ) { id.style.display = "block"; }
+   else { id.style.display = "none"; }
+}
+function HamburgerMenuItemOver(id) { id.style.backgroundColor = "#efefef"; }
+function HamburgerMenuItemOut(id) { id.style.backgroundColor = "#fff"; }
+</script>
+
+
+<!-- ***********************************************************
+
+End Burger Navigation
+
+**************************************************************** -->
+
+    <img src="images/logo1.png">
+      <div class="benschnell">
+        <h1>I'm Ben Schnell</h1>
+        <h3>AND I MAKE WEBSITES</h3>
       </div>
-      <div class="call2action"> <a href="example/demo.html">
-          <p>Example Projects</p></a></div>
-           <div class="contact">
-                  <ul>
-                    <li><a href="mailto:ben@schnell.io"><img src="images/mail.png">ben@schnell.io </a></li>
-                    <li><a href="tel:4236193528"><img src="images/phone.png">423.619.3528 </a></li>
-                    <li><a href="http://twitter.com/benschmo"><img src="images/twitter.png">@benschmo</a></li>
-                  </ul>
-               </div>
+    </div>
+      <div class="next">
+        <div class="headshot row">
+           <div class="medium-6 columns">
+           <img src="images/bn2.jpg">
+          </div>
+          <div class="medium-6 columns">
+           <div class="philo">
+             <h4>Philosophy</h4>
+           </div>
+           <div class="tagline">
+             <p>I get passionate about my projects, and I love working with others who are passionate about what they do. Working with a sense of mission is not only exhilarating, it's the beginning of real creativity.</p>
+           </div>
+          </div>
+        </div>
+      </div>
+
+<!-- ***********************************************************
+
+Gallery of Examples
+
+**************************************************************** -->
+    <a name="examples"></a>
+    <div class="examples1">
+      <ul class="gallery1">
+          <li>
+             <img src="images/riverview-content.png" alt=""/>
+          </li>
+      </ul>
+      
+      <div class="explain">
+        <h2>Riverview Community</h2>
+        <h3>A custom, editable theme for WordPress</h3>
+        <p>Riverview Community Church in Greeneville TN needed a website update. Their old site was not aesthetically attractive, nor mobile responsive. They needed a site with a content management system so they could update the site themselves without having to write or edit code. WordPress is the most commonly used Content Management System on the web.</p>
+        <a href="http://development.riverviewsda.divshot.io" target="_blank">View work in progress</a>
+      </div>
+
+       <ul class="gallery1">
+          <li>
+            <img src="images/torch-content.png" alt=""/>
+          </li>
+      </ul>
+      
+      <div class="explain">
+        <h2>Torch Social Media Manager</h2>
+        <h3>Recruiting Landing Page</h3>
+        <p>Torch was hiring a social media manager, and I created this site to tell the story of the company and to encourage talented social media marketers to apply. The site highlighted a few of the main responsibilities of the job and linked them away to the full job description and application.</p>
+        <a href="http://development.torch.divshot.io" target="_blank">View site in staging</a>
+      </div>
+
+       <ul class="gallery1">
+          <li>
+            <img src="images/fishackathon-content.png" alt=""/>
+          </li>
+      </ul>
+
+      <div class="explain">
+        <h2>Sustainable Supper</h2>
+        <h3>A site promoting sustainability in seafood</h3>
+        <p>The State Department sponsored a Hackathon in 12 cities internationally to promote sustainable fishing practices. The Chattanooga Aquarium hosted the local chapter and my teammate (Michael Daily) and I created a site called Sustainable Supper to help consumers find and support restuarants, farms, and fisheries that provide food in a sustainable way. The project came in second place in Chattanooga, and won first place prize at the National Aquarium in Baltimore, Maryland.</p>
+        <a href="http://development.fishackathon.divshot.io" target="_blank">View site in staging</a>
+      </div>
+
+       <ul class="gallery1">
+          <li>
+            <img src="images/lpg-hackathon.png" alt=""/>
+          </li>
+      </ul>
+
+    <div class="explain">
+      <h2>Lamp Post Group Hackathon</h2>
+       <h3>Static Lead Generation Page</h3>
+       <p>This website is themed to look like a code editor, which is one of the main applications a computer programmer looks at all day. Lamp Post Group needed a site to advertise their Hackathon (a coding for fun event) and to collect signups.</p>
+       <a href="http://development.n.divshot.io" target="_blank">View site in staging</a>
+    </div>
+  </div>
+
+<!-- ****************************************************
+
+End Gallery of Mobile Examples
+
+**************************************************** -->
+
+      <div class="examples2">
+        <ul class="gallery">
+          <li>
+              <figure>
+                  <img src="images/riverview-content.png" alt=""/>
+                  <figcaption>
+                      <h2>Riverview Community</h2>
+                      <h3>A custom, editable theme for WordPress</h3>
+                      <p>Riverview Community Church in Greeneville TN needed a website update. Their old site was not aesthetically attractive, nor mobile responsive. They needed a site with a content management system so they could update the site themselves without having to write or edit code. WordPress is the most commonly used Content Management System on the web.</p>
+                      <a href="http://development.riverviewsda.divshot.io" target="_blank">View work in progress</a>
+                  </figcaption>
+              </figure>
+          </li>
+      </ul>
+
+       <ul class="gallery">
+          <li>
+              <figure>
+                  <img src="images/torch-content.png" alt=""/>
+                  <figcaption>
+                      <h2>Torch Social Media Manager</h2>
+                      <h3>Recruiting Landing Page</h3>
+                      <p>Torch was hiring a social media manager, and I created this site to tell the story of the company and to encourage talented social media marketers to apply. The site highlighted a few of the main responsibilities of the job and linked them away to the full job description and application.</p>
+                      <a href="http://development.torch.divshot.io" target="_blank">View site in staging</a>
+                  </figcaption>
+              </figure>
+          </li>
+      </ul>
+
+       <ul class="gallery">
+          <li>
+              <figure>
+                  <img src="images/fishackathon-content.png" alt=""/>
+                  <figcaption>
+                      <h2>Sustainable Supper</h2>
+                      <h3>A site promoting sustainability in seafood</h3>
+                      <p>The State Department sponsored a Hackathon in 12 cities internationally to promote sustainable fishing practices. The Chattanooga Aquarium hosted the local chapter and my teammate (Michael Daily) and I created a site called Sustainable Supper to help consumers find and support restuarants, farms, and fisheries that provide food in a sustainable way. The project came in second place in Chattanooga, and won first place prize at the National Aquarium in Baltimore, Maryland.</p>
+                      <a href="http://development.fishackathon.divshot.io" target="_blank">View site in staging</a>
+                  </figcaption>
+              </figure>
+          </li>
+      </ul>
+
+       <ul class="gallery">
+          <li>
+              <figure>
+                  <img src="images/lpg-hackathon.png" alt=""/>
+                  <figcaption>
+                     <h2>Lamp Post Group Hackathon</h2>
+                     <h3>Static Lead Generation Page</h3>
+                     <p>This website is themed to look like a code editor, which is one of the main applications a computer programmer looks at all day. Lamp Post Group needed a site to advertise their Hackathon (a coding for fun event) and to collect signups.</p>
+                      <a href="http://development.n.divshot.io" target="_blank">View site in staging</a>
+                  </figcaption>
+              </figure>
+          </li>
+      </ul>
+  </div>
+<!-- ***********************************************************
+
+End Gallery of Fancy Examples
+
+**************************************************************** -->
+
+<!-- ***********************************************************
+
+Contact
+
+**************************************************************** -->
+  
+          <div class="contact">
+            <h1>Get in Touch</h1>
+            <ul>
+              <li><a href="mailto:ben@schnell.io"><img src="images/mail.png">ben@schnell.io </a></li>
+              <li><a href="tel:4236193528"><img src="images/phone.png">423.619.3528 </a></li>
+              <li><a href="http://twitter.com/benschmo"><img src="images/twitter.png">@benschmo</a></li>
+            </ul>
+          </div>
+   
+
+<!-- ***********************************************************
+
+End Contact
+
+**************************************************************** -->   
     </div>
     </div>
     </div>
+
+
+   <!-- ******************************************************
+
+    JS
+
+    ****************************************************** -->
+
+
     <script src="//ajax.googleapis.com/ajax/libs/jquery/{{JQUERY_VERSION}}/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/jquery-{{JQUERY_VERSION}}.min.js"><\\/script>')</script>
     <script src="js/main.js"></script>
     <script src="js/vendor/modernizer.custom.js"></script>
     <script src="js/vendor/main.js"></script>
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID.-->
+
+
+    <!-- ******************************************************
+
+    Google Analytics: change UA-XXXXX-X to be your site's ID.
+
+    ****************************************************** -->
     <script>
       (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
       function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
