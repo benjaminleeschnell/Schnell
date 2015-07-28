@@ -3034,7 +3034,7 @@ End Burger Navigation
 .philo h4 {
   text-align: center;
   color: #22334A;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 1em; }
 
 .tagline {
@@ -3043,8 +3043,18 @@ End Burger Navigation
     margin-top: 5%;
     color: #22334A;
     text-align: center;
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 0.80em; }
+
+.samples {
+  text-align: center;
+  background-color: #024367;
+  margin-bottom: 30px; }
+  .samples h1 {
+    color: white;
+    padding: 10px 0;
+    font-family: "Megrim";
+    font-size: 1em; }
 
   /*******************************************************
 
@@ -3079,8 +3089,7 @@ End Burger Navigation
   .explain a {
     font-family: "Open Sans";
     font-size: 0.70em;
-    color: gray;
-    padding: 10px; }
+    color: gray; }
 
   /*******************************************************
 
@@ -3093,32 +3102,30 @@ End Burger Navigation
 
   ************************************************/
 .contact {
-  background-color: white;
-  margin-top: 30px; }
+  clear: both;
+  background-color: #024367;
+  margin-top: 30px;
+  overflow: hidden; }
   .contact ul {
     text-align: center;
-    margin-bottom: 0; }
+    padding: 30px 0;
+    margin-left: 0; }
   .contact img {
-    max-width: 90%;
-    margin: 10px 5%; }
+    max-width: 30%;
+    margin: 10px 10% 0 10%; }
   .contact li {
     text-decoration: none;
     list-style-type: none; }
   .contact a {
-    color: white;
+    color: #024367;
     font-size: 0.50em;
     font-family: "Open Sans", sans-serif;
     text-decoration: none;
-    padding: 0 0 -30px 0; }
+    padding: 0 0 0 0; }
   .contact h1 {
-    background-color: gray;
-    padding: 10px 0;
-    color: white;
-    font-size: 1.5em;
-    font-family: "Open Sans", sans-serif;
-    text-align: center; }
+    display: none; }
   .contact a:hover {
-    color: silver; }
+    color: white; }
 
 /*********************************************** 
 
@@ -3130,6 +3137,9 @@ End Contact
 MEDIA QUERIES 
 
 ************************************************/
+@media only screen and (max-height: 450px) {
+  .benschnell {
+    margin-top: 20% !important; } }
 @media only screen and (min-width: 456px) {
   .benschnell {
     margin-top: 45%; }
@@ -3147,17 +3157,20 @@ MEDIA QUERIES
   .tagline p {
     margin-top: 2%;
     text-align: center;
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 0.90em; }
 
-  .contact ul {
-    text-align: center; }
-  .contact li {
-    display: inline-block; }
-  .contact a {
-    font-size: 0.75em; }
-  .contact img {
-    max-width: 150px; } }
+  .contact {
+    clear: both; }
+    .contact ul {
+      text-align: center;
+      margin-left: 0; }
+    .contact li {
+      display: inline-block; }
+    .contact a {
+      font-size: 0.75em; }
+    .contact img {
+      max-width: 100px; } }
 @media only screen and (min-width: 650px) {
   .benschnell {
     margin-top: 40%; }
@@ -3222,12 +3235,12 @@ MEDIA QUERIES
   End Gallery
 
   *********************************************************/
-  .contact h1 {
-    font-size: 1.5em; }
-  .contact img {
-    max-width: 200px; }
-  .contact a {
-    font-size: 1em; } }
+  .contact {
+    clear: both; }
+    .contact img {
+      max-width: 100px; }
+    .contact a {
+      font-size: 0.85em; } }
 @media only screen and (min-width: 767px) {
   .benschnell {
     margin-top: 40%; }
@@ -3247,6 +3260,9 @@ MEDIA QUERIES
 
   .tagline p {
     font-size: 1.3em; }
+
+  .next {
+    margin-bottom: 50px; }
 
     /*******************************************************
 
@@ -3289,14 +3305,13 @@ MEDIA QUERIES
   End Gallery
 
   *********************************************************/
-  .contact h1 {
-    font-size: 3em;
-    margin: 50px 0 30px 0; }
-  .contact img {
-    max-width: 200px; }
-  .contact a {
-    font-size: 1.3em; } }
-@media only screen and (min-width: 1000px) {
+  .contact {
+    clear: both; }
+    .contact img {
+      max-width: 100px; }
+    .contact a {
+      font-size: 1em; } }
+@media only screen and (min-width: 1025px) {
   .top {
     background-attachment: fixed; }
 
@@ -3330,6 +3345,9 @@ MEDIA QUERIES
   .headshot img:hover {
     filter: none;
     -webkit-filter: none; }
+
+  .samples h1 {
+    font-size: 1.6em; }
 
   /*******************************************************
 
@@ -3394,16 +3412,13 @@ MEDIA QUERIES
     color: white;
     text-align: left; }
 
-  .gallery figure a {
-    display: block;
+  .gallery a {
     font-family: 'Open Sans';
     font-weight: 300;
     font-size: 18px;
-    line-height: 21px;
+    line-height: 60px;
     margin: 0;
-    color: black;
-    text-align: left;
-    padding: 10px; }
+    color: black; }
 
   .gallery figure figcaption {
     top: 0;
@@ -3413,7 +3428,7 @@ MEDIA QUERIES
     padding: 29px 44px;
     background-color: #756A67;
     text-align: center;
-    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
     -webkit-transform: rotateY(-180deg);
     -moz-transform: rotateY(-180deg);
     transform: rotateY(-180deg);
@@ -3422,7 +3437,7 @@ MEDIA QUERIES
     transition: all 0.5s; }
 
   .gallery figure img {
-    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
     -webkit-transition: all .5s;
     -moz-transition: all .5s;
     transition: all 0.5s; }
@@ -3448,26 +3463,45 @@ MEDIA QUERIES
 
   *********************************************************/
   .contact {
-    background-color: white; }
+    clear: both;
+    background-color: #024367;
+    margin-top: 0; }
     .contact h1 {
-      font-size: 1.5em; }
+      display: block;
+      font-size: 2em;
+      background-color: #024367;
+      color: white;
+      margin-top: 0;
+      font-family: "Megrim";
+      text-align: center;
+      padding: 30px 0 0 0; }
     .contact ul {
-      text-align: center; }
+      text-align: center;
+      margin-left: 0; }
     .contact img {
       width: 100px; }
     .contact a {
       font-size: 1em !important;
-      text-align: left;
-      color: white; } }
+      text-align: center;
+      color: #024367; } }
   /*******************************************************
 
   End Contact
 
   *********************************************************/
 @media only screen and (min-width: 1200px) {
+  .benschnell {
+    margin-top: 21%; }
+
   .contact {
-    margin-top: 0;
-    background-color: white; }
+    clear: both;
+    background-color: #024367;
+    overflow: hidden; }
+    .contact ul {
+      margin-left: -25px; }
+    .contact h1 {
+      font-size: 2em !important;
+      margin-top: 0; }
     .contact li {
       display: inline-block; }
     .contact img {

@@ -124,7 +124,7 @@ End Burger Navigation
 .philo h4 {
   text-align: center;
   color: $primary-color;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 1em;
   }
 
@@ -134,11 +134,23 @@ End Burger Navigation
   margin-top: 5%;
   color: $primary-color;
   text-align: center;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 0.80em; 
   }
 }
 
+.samples {
+  text-align: center;
+  background-color: #024367;
+  margin-bottom: 30px;
+  
+  h1 { 
+    color: white;
+    padding: 10px 0;
+    font-family: "Megrim";
+    font-size: 1em;
+  }
+}
 
   /*******************************************************
 
@@ -182,7 +194,6 @@ End Burger Navigation
     font-family: "Open Sans";
     font-size: 0.70em;
     color: gray;
-    padding: 10px;
   }
 }
 
@@ -199,37 +210,35 @@ End Burger Navigation
   ************************************************/
 
 .contact {
-  background-color: white;
+  clear: both;
+  background-color: #024367;
   margin-top: 30px;
+  overflow: hidden;
   ul {
   text-align: center;
-  margin-bottom: 0;
-    }
+  padding: 30px 0;
+  margin-left: 0;
+}
   img {
-  max-width: 90%;
-  margin: 10px 5%;
+  max-width: 30%;
+  margin: 10px 10% 0 10%;
    }
   li {
     text-decoration: none;
     list-style-type: none;
      }
   a {
-    color: white;
+    color: #024367;
     font-size: 0.50em;
     font-family: $primary-font;
     text-decoration: none;
-    padding: 0 0 -30px 0;
+    padding: 0 0 0 0;
      }
   h1 {
-    background-color: gray;
-    padding: 10px 0;
-    color: white;
-    font-size: 1.5em;
-    font-family: $primary-font;
-    text-align: center;
+    display: none;
      }
   a:hover {
-    color: silver; 
+    color: white; 
   }
 }
 
@@ -246,7 +255,11 @@ End Contact
 MEDIA QUERIES 
 
 ************************************************/
-
+@media only screen and (max-height: 450px) {
+  .benschnell{
+    margin-top: 20% !important;
+  }
+}
 
 @media only screen and (min-width: 456px) {
  
@@ -271,14 +284,16 @@ MEDIA QUERIES
   .tagline p {
     margin-top: 2%;
     text-align: center;
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 0.90em;
   }
 
 
   .contact {
+    clear: both;
     ul {
       text-align: center;
+      margin-left: 0;
     }
     li {
       display: inline-block;
@@ -287,7 +302,7 @@ MEDIA QUERIES
       font-size: 0.75em;
     }
     img {
-      max-width: 150px;
+      max-width: 100px;
     }
   }
 }
@@ -380,14 +395,12 @@ MEDIA QUERIES
   *********************************************************/
 
   .contact {
-    h1 {
-      font-size: 1.5em;
-    }
+    clear: both;
     img {
-      max-width: 200px;
+      max-width: 100px;
       }
     a {
-      font-size: 1em;
+      font-size: 0.85em;
     }
   }
 }
@@ -422,6 +435,9 @@ MEDIA QUERIES
     }
   }  
 
+  .next {
+    margin-bottom: 50px;
+  }
 
     /*******************************************************
 
@@ -476,21 +492,18 @@ MEDIA QUERIES
   *********************************************************/
 
   .contact {
-    h1 {
-      font-size: 3em;
-      margin: 50px 0 30px 0;
-    }
+    clear: both;
     img {
-      max-width: 200px;
+      max-width: 100px;
       }
     a {
-      font-size: 1.3em;
+      font-size: 1em;
     }
   } 
 }
 
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1025px) {
 
   .top {
     background-attachment: fixed;
@@ -540,6 +553,10 @@ MEDIA QUERIES
     -webkit-filter: none;
   }
 
+  .samples h1 {
+    font-size: 1.6em;
+  }
+
   /*******************************************************
 
   Gallery
@@ -582,7 +599,7 @@ MEDIA QUERIES
     z-index:5;
     -webkit-box-sizing:border-box;
     -moz-box-sizing:border-box;
-    box-sizing:border-box
+    box-sizing:border-box;
 }
 .gallery figure h2 {
     font-family:'Open Sans';
@@ -609,16 +626,13 @@ MEDIA QUERIES
     color: white;
     text-align:left
 }
-.gallery figure a {
-    display:block;
+.gallery a {
     font-family:'Open Sans';
     font-weight: 300;
     font-size:18px;
-    line-height:21px;
+    line-height:60px;
     margin:0;
     color: black;
-    text-align:left;
-    padding: 10px;
 }
 
 .gallery figure figcaption {
@@ -629,7 +643,7 @@ MEDIA QUERIES
     padding:29px 44px;
     background-color: #756A67;
     text-align:center;
-    backface-visibility:hidden;
+    -webkit-backface-visibility:hidden;
     -webkit-transform:rotateY(-180deg);
     -moz-transform:rotateY(-180deg);
     transform:rotateY(-180deg);
@@ -638,7 +652,7 @@ MEDIA QUERIES
     transition:all .5s
 }
 .gallery figure img {
-    backface-visibility:hidden;
+    -webkit-backface-visibility:hidden;
     -webkit-transition:all .5s;
     -moz-transition:all .5s;
     transition:all .5s
@@ -667,20 +681,30 @@ MEDIA QUERIES
   *********************************************************/
 
   .contact {
-    background-color: white;
+    clear: both;
+    background-color: #024367;
+    margin-top: 0;
     h1 {
-      font-size: 1.5em;
+      display: block;
+      font-size: 2em;
+      background-color: #024367;
+      color: white;
+      margin-top: 0;
+      font-family: "Megrim";
+      text-align: center;
+      padding: 30px 0 0 0;
     }
     ul {
       text-align: center;
+      margin-left: 0;
     }
     img {
       width: 100px;
       }
     a {
       font-size: 1em !important;
-      text-align: left;
-      color: white;
+      text-align: center;
+      color: #024367;
     }
   } 
 }
@@ -694,10 +718,20 @@ MEDIA QUERIES
 
 @media only screen and (min-width: 1200px) {
 
-
+  .benschnell {
+    margin-top: 21%;
+  }
   .contact {
-    margin-top: 0;
-    background-color: white;
+    clear: both;
+    background-color: #024367;
+    overflow: hidden;
+    ul{
+      margin-left: -25px;
+    }
+    h1{
+      font-size: 2em !important;
+      margin-top: 0;
+    }
     li {
       display: inline-block;
     }
