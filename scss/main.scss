@@ -1,20 +1,21 @@
 @import "foundation/foundation";
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300,600,400);
 @import url(http://fonts.googleapis.com/css?family=Megrim);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu);
 
 $primary-color: #22334A;
 $primary-font: "Open Sans", sans-serif;
 $secondary-font: "Megrim", sans-serif;
 
 .top {
-  height: 100%;
+ // height: 100%;
   background: 50% 50% no-repeat;
  -webkit-background-size: cover;
  -moz-background-size: cover;
  -o-background-size: cover;
   background-size: cover;
   position: relative;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(255, 255, 255, 0.1)), url('../images/full.jpg'); 
+  // background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(255, 255, 255, 0.1)), url('../images/full.jpg'); 
   background-attachment: scroll;
   overflow: scroll;
    img {
@@ -49,7 +50,7 @@ Burger Navigation
 
 #burger-holder {
    position: relative; 
-   background-color: white;  
+   background-color: black;  
    cursor: pointer; 
    border: none; 
    
@@ -65,8 +66,8 @@ Burger Navigation
 #burger-menu {
    display: block;
    position: absolute; 
-   right: 80px;
-   top: 120px;
+   right: 40px;
+   top: 60px;
    width: 120px;
    background-color: white; 
    border: 1px solid #eee; 
@@ -92,17 +93,17 @@ End Burger Navigation
 **********************************************************/
 
 .benschnell {
-  margin: 60% auto 0 auto;
+  margin: 15% auto 15% auto;
   h1 {
     text-align: center;
-    color: white;
-    font-family: "Megrim";
-    font-size: 1.5em;
+    color: black;
+    font-family: "Ubuntu";
+    font-size: 2.5em;
     // font-weight: 700;
   }
   h3 {
     text-align: center;
-    color: white;
+    color: black;
     font-family: "Open Sans";
     font-size: 0.85em;
     font-weight: 300;
@@ -124,7 +125,7 @@ End Burger Navigation
 .philo h4 {
   text-align: center;
   color: $primary-color;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-size: 1em;
   }
 
@@ -177,7 +178,7 @@ End Burger Navigation
 
 
 .explain {
-  margin: 10px 10px;
+  margin: 10px 10px 50px 10px;
   h2 {
   font-family: "Open Sans";
   font-size: 0.85em;
@@ -210,32 +211,32 @@ End Burger Navigation
   ************************************************/
 
 .contact {
-  clear: both;
-  background-color: #024367;
+  background-color: black;
   margin-top: 30px;
+  padding: 30px 0;
   overflow: hidden;
   ul {
-  text-align: center;
-  padding: 30px 0;
-  margin-left: 0;
-}
+    text-align: center;
+    margin-left: 0 !important;
+  }
   img {
-  max-width: 30%;
-  margin: 10px 10% 0 10%;
+   max-width: 50px;
+   padding-top: 20px;
    }
   li {
-    text-decoration: none;
     list-style-type: none;
+    display: inline-block;
      }
   a {
-    color: #024367;
+    color: black;
     font-size: 0.50em;
     font-family: $primary-font;
     text-decoration: none;
-    padding: 0 0 0 0;
      }
   h1 {
-    display: none;
+    font-family: "Ubuntu";
+    color: white;
+    text-align: center;
      }
   a:hover {
     color: white; 
@@ -263,9 +264,9 @@ MEDIA QUERIES
 
 @media only screen and (min-width: 456px) {
  
-  .benschnell {
-    margin-top: 45%;
-  }
+  // .benschnell {
+  //   margin-top: 20%;
+  // }
 
   .headshot {
     margin-top: 2%; }
@@ -310,18 +311,17 @@ MEDIA QUERIES
 @media only screen and (min-width: 650px) {
  
   .benschnell {
-    margin-top: 40%;
     h1 {
-      font-size: 2em;
+      font-size: 3.5em;
     }
     h3 {
-      font-size: 1.2em;
+      font-size: 1.8em;
     }
   }
   .headshot {
     img {
     max-width: 80%;
-    margin: 30px 5% 30px 10%
+    margin: 50px 5% 30px 10%
   }
 }
 
@@ -329,7 +329,7 @@ MEDIA QUERIES
     h4 {
       font-size: 1.8em;
       color: black;
-      margin-top: 30px;
+      margin-top: 50px;
       text-align: left;
     }
   }
@@ -408,12 +408,11 @@ MEDIA QUERIES
 @media only screen and (min-width: 767px) {
  
  .benschnell {
-  margin-top: 40%;
   h1 {
-    font-size: 3em;
+    font-size: 4em;
   }
   h3 {
-    font-size: 1.7em;
+    font-size: 2.5em;
   }
  }
   .headshot {
@@ -510,20 +509,34 @@ MEDIA QUERIES
   }
 
   .benschnell {
-    margin-top: 17%;
+    margin-top: 10%;
+    margin-bottom: 10%;
 
     h1 {
-      font-size: 3.5em;
+      font-size: 5.5em;
+      color: black;
+      font-family: "Ubuntu";
+      text-align: left;
+      padding-left: 100px;
     }
     h3 {
      font-size: 2em;
+     color: black;
+     text-align: left;
+     padding-left: 100px;
     }
+  }
+
+  .next {
+    clear: both;
+    margin-top: 100px;
+    margin-left: 100px;
   }
 
   .headshot {
     img {
       max-width: 60%;
-      margin: 45px 30% 100px 10%;
+      margin: 50px 40% 100px 0;
       border-radius: 10px;
     }
   }
@@ -532,7 +545,7 @@ MEDIA QUERIES
     h4 {
       text-align: left;
       color: black;
-      margin: 75px 100px 0 -100px;
+      margin: 80px 100px 0 -100px;
     }
   }
 
@@ -543,9 +556,9 @@ MEDIA QUERIES
   }
 
   .headshot img {
-      -webkit-filter: grayscale(100%);
-      -moz-filter: grayscale(100%);
-      filter: grayscale(100%);
+      // -webkit-filter: grayscale(100%);
+      // -moz-filter: grayscale(100%);
+      // filter: grayscale(100%);
   }
 
   .headshot img:hover {
@@ -572,10 +585,12 @@ MEDIA QUERIES
 
 .gallery {
     position:relative;
-    width:50%;
+    width:32.5%;
     overflow:hidden;
-    float:left;
-    margin: 0 0 0 0;
+    display: inline-block;
+    float: center;
+    margin: 1% 0.25%;
+    padding-right: 5px;
 
   li {
     list-style-type: none;
@@ -583,7 +598,7 @@ MEDIA QUERIES
 }
 
 .gallery figure {
-    margin:0;
+    margin:0 auto;
     padding:0;
     position:relative;
     cursor:pointer;
@@ -605,7 +620,7 @@ MEDIA QUERIES
     font-family:'Open Sans';
     font-weight: 300;
     color: white;
-    font-size:24px;
+    font-size:18px;
     text-align:left
 }
 
@@ -613,15 +628,15 @@ MEDIA QUERIES
     font-family:'Open Sans';
     font-weight: 300;
     color: white;
-    font-size:21px;
+    font-size:16px;
     text-align:left
 }
 .gallery figure p {
     display:block;
     font-family:'Open Sans';
     font-weight: 300;
-    font-size:18px;
-    line-height:21px;
+    font-size:14px;
+    line-height:14px;
     margin:0;
     color: white;
     text-align:left
@@ -629,10 +644,10 @@ MEDIA QUERIES
 .gallery a {
     font-family:'Open Sans';
     font-weight: 300;
-    font-size:18px;
-    line-height:60px;
+    font-size:14px;
+    line-height:30px;
     margin:0;
-    color: black;
+    color: white;
 }
 
 .gallery figure figcaption {
@@ -641,9 +656,12 @@ MEDIA QUERIES
     width:100%;
     height:100%;
     padding:29px 44px;
-    background-color: #756A67;
+    background-color: black;
     text-align:center;
     -webkit-backface-visibility:hidden;
+    -moz-backface-visibility:hidden;
+    -o-backface-visibility:hidden;
+    backface-visibility:hidden;
     -webkit-transform:rotateY(-180deg);
     -moz-transform:rotateY(-180deg);
     transform:rotateY(-180deg);
@@ -653,6 +671,9 @@ MEDIA QUERIES
 }
 .gallery figure img {
     -webkit-backface-visibility:hidden;
+    -moz-backface-visibility:hidden;
+    -o-backface-visibility:hidden;
+    backface-visibility:hidden;
     -webkit-transition:all .5s;
     -moz-transition:all .5s;
     transition:all .5s
@@ -682,12 +703,12 @@ MEDIA QUERIES
 
   .contact {
     clear: both;
-    background-color: #024367;
+    background-color: #000000 !important;
     margin-top: 0;
     h1 {
       display: block;
       font-size: 2em;
-      background-color: #024367;
+      background-color: black;
       color: white;
       margin-top: 0;
       font-family: "Megrim";
@@ -699,12 +720,13 @@ MEDIA QUERIES
       margin-left: 0;
     }
     img {
-      width: 100px;
+      width: 200px !important;
+      margin: 0 100px;
       }
     a {
       font-size: 1em !important;
       text-align: center;
-      color: #024367;
+      color: black;
     }
   } 
 }
@@ -719,7 +741,11 @@ MEDIA QUERIES
 @media only screen and (min-width: 1200px) {
 
   .benschnell {
-    margin-top: 21%;
+    margin-top: 10%;
+  }
+
+  .next {
+    margin-top: 100px !important;
   }
   .contact {
     clear: both;
@@ -729,8 +755,9 @@ MEDIA QUERIES
       margin-left: -25px;
     }
     h1{
-      font-size: 2em !important;
+      font-size: 5em !important;
       margin-top: 0;
+      font-family: "Ubuntu";
     }
     li {
       display: inline-block;
