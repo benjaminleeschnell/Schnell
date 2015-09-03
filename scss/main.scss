@@ -1,11 +1,11 @@
 @import "foundation/foundation";
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300,600,400);
-@import url(http://fonts.googleapis.com/css?family=Megrim);
 @import url(http://fonts.googleapis.com/css?family=Ubuntu);
+@import url(http://fonts.googleapis.com/css?family=Lora);
 
 $primary-color: #22334A;
 $primary-font: "Open Sans", sans-serif;
-$secondary-font: "Megrim", sans-serif;
+$secondary-font: "Ubuntu", sans-serif;
 
 .top {
  // height: 100%;
@@ -99,8 +99,8 @@ End Burger Navigation
     color: black;
     font-family: "Ubuntu";
     font-size: 2.5em;
-    // font-weight: 700;
   }
+  
   h3 {
     text-align: center;
     color: black;
@@ -188,7 +188,7 @@ End Burger Navigation
     font-size: 0.80em;
   }
    p {
-    font-family: "Open Sans";
+    font-family: "Lora";
     font-size: 0.70em;
   }
    a {
@@ -211,7 +211,7 @@ End Burger Navigation
   ************************************************/
 
 .contact {
-  background-color: black;
+  background-color: white;
   margin-top: 30px;
   padding: 30px 0;
   overflow: hidden;
@@ -222,24 +222,25 @@ End Burger Navigation
   img {
    max-width: 50px;
    padding-top: 20px;
+   padding-right: 10px;
    }
   li {
     list-style-type: none;
     display: inline-block;
      }
   a {
-    color: black;
+    color: white;
     font-size: 0.50em;
     font-family: $primary-font;
     text-decoration: none;
      }
   h1 {
     font-family: "Ubuntu";
-    color: white;
+    color: black;
     text-align: center;
      }
   a:hover {
-    color: white; 
+    color: black; 
   }
 }
 
@@ -303,7 +304,8 @@ MEDIA QUERIES
       font-size: 0.75em;
     }
     img {
-      max-width: 100px;
+      max-width: 120px;
+      padding: 20px 30px;
     }
   }
 }
@@ -377,7 +379,7 @@ MEDIA QUERIES
     font-size: 1em;
   }
    p {
-    font-family: "Open Sans";
+    font-family: "Lora";
     font-size: 0.90em;
   }
    a {
@@ -397,7 +399,8 @@ MEDIA QUERIES
   .contact {
     clear: both;
     img {
-      max-width: 100px;
+      max-width: 150px !important;
+      padding: 20px 40px;
       }
     a {
       font-size: 0.85em;
@@ -473,7 +476,7 @@ MEDIA QUERIES
     font-size: 1.2em;
   }
    p {
-    font-family: "Open Sans";
+    font-family: "Lora";
     font-size: 1.1em;
   }
    a {
@@ -493,7 +496,8 @@ MEDIA QUERIES
   .contact {
     clear: both;
     img {
-      max-width: 100px;
+      max-width: 200px !important;
+      padding: 30px 40px;
       }
     a {
       font-size: 1em;
@@ -536,8 +540,7 @@ MEDIA QUERIES
   .headshot {
     img {
       max-width: 60%;
-      margin: 50px 40% 100px 0;
-      border-radius: 10px;
+      margin: 50px 40% 0 0;
     }
   }
 
@@ -589,8 +592,8 @@ MEDIA QUERIES
     overflow:hidden;
     display: inline-block;
     float: center;
-    margin: 1% 0.25%;
-    padding-right: 5px;
+    margin: 0.25% 0.25%;
+    border: solid gray 1px;
 
   li {
     list-style-type: none;
@@ -628,15 +631,15 @@ MEDIA QUERIES
     font-family:'Open Sans';
     font-weight: 300;
     color: white;
-    font-size:16px;
+    font-size:14px;
     text-align:left
 }
 .gallery figure p {
     display:block;
-    font-family:'Open Sans';
+    font-family:'Lora';
     font-weight: 300;
-    font-size:14px;
-    line-height:14px;
+    font-size:12px;
+    line-height:18px;
     margin:0;
     color: white;
     text-align:left
@@ -703,15 +706,15 @@ MEDIA QUERIES
 
   .contact {
     clear: both;
-    background-color: #000000 !important;
-    margin-top: 0;
+    background-color: white !important;
+    margin-top: 75px;
     h1 {
       display: block;
-      font-size: 2em;
-      background-color: black;
-      color: white;
+      font-size: 4em;
+      background-color: white;
+      color: black;
       margin-top: 0;
-      font-family: "Megrim";
+      font-family: "Ubuntu";
       text-align: center;
       padding: 30px 0 0 0;
     }
@@ -720,13 +723,13 @@ MEDIA QUERIES
       margin-left: 0;
     }
     img {
-      width: 200px !important;
-      margin: 0 100px;
+      max-width: 200px !important;
+      margin: 40px 50px 20px 50px;
       }
     a {
-      font-size: 1em !important;
+      font-size: 1.5em !important;
       text-align: center;
-      color: black;
+      color: white;
     }
   } 
 }
@@ -749,7 +752,7 @@ MEDIA QUERIES
   }
   .contact {
     clear: both;
-    background-color: #024367;
+    background-color: white;
     overflow: hidden;
     ul{
       margin-left: -25px;
@@ -763,7 +766,7 @@ MEDIA QUERIES
       display: inline-block;
     }
     img {
-      max-width: 100px;
+      max-width: 200px;
       }
     
     a {
